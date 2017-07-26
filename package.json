@@ -1,0 +1,23 @@
+{
+  "name": "node-chat-app",
+  "version": "1.0.0",
+  "description": "node js chat api",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "start-dev": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "v8.1"
+  },
+  "author": "Daniel Toth <firius87@gmail.com>",
+  "repository": {
+      "type" : "git",
+      "url" : "https://github.com/dantot/node-chat-app.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
