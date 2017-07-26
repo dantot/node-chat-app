@@ -13,11 +13,12 @@
   },
   "author": "Daniel Toth <firius87@gmail.com>",
   "repository": {
-      "type" : "git",
-      "url" : "https://github.com/dantot/node-chat-app.git"
+    "type": "git",
+    "url": "https://github.com/dantot/node-chat-app.git"
   },
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "socket.io": "^2.0.3"
   }
 }
