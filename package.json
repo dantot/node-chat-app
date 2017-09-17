@@ -6,8 +6,11 @@
   "scripts": {
     "start": "node --use_strict server/server.js",
     "start:dev": "nodemon --use_strict server/server.js",
+    "webpack": "webpack -p",
+    "webpack:dev": "webpack-dev-server",
     "test": "mocha --use_strict server/**/*.test.js",
-    "test:dev": "nodemon --exec 'npm test'"
+    "test:dev": "nodemon --exec 'npm test'",
+    "postinstall": "webpack"
   },
   "engines": {
     "node": "v8.5.0"
@@ -21,12 +24,20 @@
   "dependencies": {
     "emojify.js": "^1.1.0",
     "express": "^4.15.4",
+    "jquery": "^3.2.1",
     "moment": "^2.18.1",
+    "mustache": "^2.3.0",
     "socket.io": "^2.0.3"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.7",
     "expect": "^1.20.2",
+    "html-webpack-plugin": "^2.30.1",
     "mocha": "^3.5.3",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
   }
 }

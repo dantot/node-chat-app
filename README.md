@@ -7,6 +7,7 @@ Node Js version v8.5.0
 ## Used package
 
 * [express](https://expressjs.com/)
+* [webpack](https://webpack.js.org/)
 * [moment](https://momentjs.com/)
 * [socket.io](https://socket.io/)
 * [emojify.js](https://github.com/emojione/emojify.js?utm_source=recordnotfound.com)

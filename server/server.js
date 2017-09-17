@@ -18,10 +18,9 @@ var io = socketIO(server);
 var users = new Users();
 
 app.use(express.static(path.join(__dirname, '../public')));
-app.use(express.static(path.join(__dirname, '../node_modules/emojify.js/dist/images/')));
 
 emojify.setConfig({
-    img_dir: 'basic'
+    img_dir: 'emojify'
 });
 
 io.on('connection', (socket) => {
