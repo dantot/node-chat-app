@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const useDevServer = true;
 
@@ -19,14 +20,16 @@ module.exports = {
     module: {
         rules: [
             {
-                use: [
-                    'style-loader', 'css-loader'
-                ],
-                test: /\.css$/
+               test: /\.css$/,
+               use: ExtractTextPlugin.extract({
+                   fallback: "style-loader",
+                   use: "css-loader"
+               })
             }
         ]
     },
     plugins: [
+        new ExtractTextPlugin("style.css"),
         new webpack.ProvidePlugin(
             {jQuery: 'jquery', $: 'jquery', 'window.jQuery': 'jquery'}
         ),
