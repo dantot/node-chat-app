@@ -1,3 +1,5 @@
+'use strict';
+
 const moment = require('moment');
 
 var generateMessage = (from, text) => {

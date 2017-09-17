@@ -2,7 +2,7 @@
 
 Node Js version v8.5.0
 
-[Live Demo](https://murmuring-woodland-10616.herokuapp.com/)
+[Live Demo (EU)](https://murmuring-island-23281.herokuapp.com/)
 
 ## Used package
 
