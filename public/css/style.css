@@ -172,6 +172,10 @@ button:disabled {
   color: #999;
 }
 
+.emoji {
+  width: 2%;
+}
+
 @media (max-width: 600px) {
   * {
     font-size: 1rem;
