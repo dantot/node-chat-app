@@ -27,5 +27,3 @@ describe('generateLocationMessage', () => {
         expect(message).toInclude({from, url});
     });
 });
-
-// https://www.google.hu/maps?q=1,1
