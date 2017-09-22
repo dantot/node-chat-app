@@ -24,6 +24,11 @@ class Users {
         let nameArray = users.map((user) => user.name);
         return nameArray;
     };
+    getRoomList () {
+        let users = this.users.filter((user) => user.room);
+        let nameArray = users.map((user) => user.room);
+        return nameArray;
+    };
 };
 
 module.exports = {Users};
